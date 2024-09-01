@@ -1,0 +1,127 @@
+/**@keyframes color {
+    0%   { background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); }
+    25%  { background: radial-gradient(circle, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 28%, rgba(148,187,233,1) 100%); }
+    50%  { background: radial-gradient(circle, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 100%); }
+    75%  { background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 28%, rgba(238,174,202,1) 100%); }
+    100% { background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); }
+  }
+  
+body{
+    background: #33CCCC; 
+    animation: color 2s ease infinite;
+    overflow: hidden;
+}**/
+
+body{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(19deg, #FFDEE9 0%, #B5FFFC 100%);
+
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Music Container**/
+.musicContainer{
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+}
+
+.albumHeading{
+    margin: .3em 1em;
+
+}
+
+.thumbnail{
+    width: 8rem;
+}
+
+.songName{
+    padding: 1em 2em;
+}
+
+.songTag{
+    padding: 1.2em;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+}
+
+.songTag:hover{
+    background: rgba(255,255,255,0.5);
+    color: #333;
+}
+
+.playing{
+    background: rgba(255, 255, 255, 0.437);
+    color: #333;
+}
+
+
+
+/** Album Container **/
+.albumContainer{
+    width: 80%;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.1);
+    border-radius: 0 10px 10px 0;
+}
+
+.image{
+    width: 50%;
+    height: 40vh;
+    margin-bottom: 2em;
+    
+}
+
+.title{
+    width: 70%;
+    text-align: center;
+}
+
+.controlContainer{
+    width: 80%;
+    margin-top: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progressBar{
+    width: 80%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.progress{
+    height: 3px;
+    background-color: green;
+}
+
+.control{
+    font-size: 1.5rem;
+    margin: 1em .6em ;
+}
+
+.pauseBtn{
+    display: none;
+}
